@@ -1,0 +1,196 @@
+footer {
+  position: relative;
+  bottom: 0;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  background: #346473;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3em;
+  margin-top: 30px;
+  background-image: url("../imagenes/fondos/orange-lotus-flower-picture-footer.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50% 10%;
+}
+
+footer .mapa .glyphicon,
+footer .dato-contacto .glyphicon,
+footer .redes .socicon {
+  font-size: 1.8em;
+}
+
+footer .dato-contacto .row:hover .glyphicon,
+footer .redes .row:hover .socicon {
+  color: #79d901;
+}
+
+footer .row .mapa:hover .glyphicon {
+  color: #79d901;
+}
+
+footer .tel-mail-horario {
+  margin-right: 0px;
+}
+
+footer .mail {
+  margin-top: 15px;
+}
+
+footer .time {
+  margin-top: 15px;
+}
+
+footer .sabado {
+  margin-top: 0;
+}
+
+footer .redes a {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}
+
+footer .martes {
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+footer .dato-contacto .socicon {
+  font-size: 1.8em;
+}
+
+footer .row .whatsapp:hover .socicon {
+  color: #79d901;
+}
+
+footer .titulo {
+  margin-bottom: 20px;
+}
+
+footer .titulo:after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: -3px;
+  height: 1px;
+  width: 15%;
+  border-bottom: 3px solid #79d901;
+}
+
+@media screen and (max-width: 767px) {
+  footer .tel-mail-horario {
+    margin-right: 0px;
+  }
+  footer .direccion {
+    font-size: 0.85em;
+  }
+  footer .mapa #map-container {
+    pointer-events: none;
+    margin-right: 15px;
+  }
+}
+
+footer .redes .item {
+  min-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer .dato-contacto .dir.item p {
+  margin: 0 auto;
+}
+
+footer .tel-mail-horario .item {
+  min-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer .tel-mail-horario .item:after {
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 50%;
+  margin: auto;
+  border-bottom: solid #545454 1px;
+}
+
+footer .redes .item:last-of-type:after,
+footer .tel-mail-horario .item:last-of-type:after {
+  border-bottom: none;
+}
+
+footer .redes .item:after {
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 50%;
+  margin: auto;
+  border-bottom: solid #545454 1px;
+}
+
+#map-container {
+  min-height: 250px;
+  max-width: 300px;
+  margin-left: 15px;
+}
+
+.close-img {
+  text-align: center;
+}
+
+.close-img .loto {
+  height: 100px;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    background-image: none;
+    padding-bottom: 0;
+  }
+  footer .dato-contacto, .mapa, .redes {
+    padding-bottom: 20px;
+    max-width: 360px;
+    margin: auto;
+  }
+}
+
+
+/* SVG Styles */
+
+.close-img .loto path {
+  transition: fill 0.5s ease;
+  fill: #346473;
+}
+
+.close-img .loto:hover path {
+  fill: #79d901;
+}
+
+.close-img .loto:hover {
+  transform: scale(1.2);
+}
+.scrollup {
+  background-color: #79d901;
+  min-height: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.botonarriba {
+  padding-top: 11px;
+  transition: all 0.5s ease-in-out;
+  
+}
+.botonarriba:hover {
+  transform: scale(1.9);
+  color:
+#346473;
+
+}

@@ -1,0 +1,24 @@
+<div class="panel panel-default promo">
+  <div class="panel-heading">{{titulo}}</div>
+  <div class="panel-body">
+    <div class="valores">
+      <span class="glyphicon glyphicon-usd"></span>
+      <span class="precio">
+        {{#if precio}}
+          {{precio}}
+        {{else}}
+          <small>--</small>
+        {{/if}}
+      </span>
+    </div>
+    {{>descripcion}}
+  </div>
+  {{#if tiempo}}
+  <div class="panel-footer">
+    <div class="tiempo">
+      <span class="glyphicon glyphicon-time"></span>
+      {{tiempo}}.
+    </div>
+  </div>
+  {{/if}}
+</div>

@@ -1,0 +1,111 @@
+{{#> layout title="Sofia Spa" seccion="Turnos"}}
+  {{#*inline "css"}}
+    <style type="text/css">
+      .contacto {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.5em;
+      }
+
+      .contacto span {
+        font-size: 3.5em;
+        color: #79d901;
+      }
+
+      .anuncio {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      .contacto .datos {
+        margin-top: 60px;
+      }
+
+      .contacto h2 {
+        color: #333;
+      }
+
+      .contacto h1 {
+        color: #79d901;
+      }
+
+      .contacto .icono {
+        text-align: center;
+      }
+
+      .gray {
+        color: #999;
+      }
+      @media screen and (max-width: 767px) {
+        .contacto {
+          text-align: center;
+        }
+        .datos > div {
+          margin-top: 30px;
+        }
+        .contacto .datos {
+          margin-top: 0;
+        }
+        .contacto .glyphicon-earphone {
+          margin-bottom: 35px;
+        }
+      }
+    </style>
+  {{/inline}}
+  {{#*inline "content"}}
+    <div class="container contacto">
+      <div class="anuncio">
+        <h1>Por turnos en todos los servicios de</h1>
+        <h1>SPA, ESTÉTICA, RELAX y DEPILACIÓN DEFINITIVA</h1>
+        <small class="gray">Depilación Sistema Español es sin turno</small>
+      </div>
+      <div class="row datos">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-2 icono">
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+            </div>
+            <div class="col-md-10">
+              <h2>sofia-spa@gmail.com</h2> </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-2 icono">
+              <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+            </div>
+            <div class="col-md-10">
+              <p>Por turnos y consultas llamanos de Martes a Viernes 9.30 a 20.00 hs y Sábados de 9.30 a 17.00 hs,</p>
+              <p>al <strong> 4524-0422 / 4521-2724</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row datos">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-2 icono">
+              <span class="socicon socicon-whatsapp whatsapp" aria-hidden="true"></span>
+            </div>
+            <div class="col-md-10">
+              <p>Reserva tu turno enviando un mensaje al</p>
+              <p><strong> +54 911 37976242</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-2 icono">
+              <span class="socicon socicon-facebook"></span>
+            </a>
+            </div>
+            <div class="col-md-10">
+              Reserva tu Turno por inbox en
+              <strong><a href="https://www.facebook.com/SofiaProductosVUrquiza/posts">Sofia Productos</a></strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/inline}}
+{{/layout}}

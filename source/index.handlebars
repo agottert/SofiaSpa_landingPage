@@ -1,0 +1,262 @@
+{{#> layout title="Sofia Spa" custom-scripts=true}}
+  {{#*inline "css"}}
+    <!-- photoswipe CSS files -->
+    <link rel="stylesheet" href="css/ps/photoswipe.css">
+    <link rel="stylesheet" href="css/ps/default-skin/default-skin.css">
+    <!-- Section CSS -->
+    <style type="text/css">
+      .presentacion {
+        margin-right: 0px;
+      }
+
+      .presentacion div {
+        padding-bottom: 50px;
+        padding-right: 0;
+      }
+
+      .presentacion img {
+        min-width: 100%;
+      }
+      .listado-main {
+        opacity: 0;
+        transition: opacity 0.5s ease-in;
+      }
+      .listado-main .item {
+        padding: 2px;
+        margin-bottom: 2px;
+        overflow: hidden;
+        max-height: 235px;
+      }
+      .listado-main .item img {
+        margin: auto;
+      }
+
+      .listado-main .item .cover {
+        padding-top: 100px;
+        opacity: 0;
+        position: relative;
+        max-width: 387px;
+        text-align: center;
+        background-color: #79d901;
+        transition: opacity 0.2s;
+        top: -235px;
+        min-height: 235px;
+        pointer-events: none;
+        margin: auto;
+      }
+
+      .listado-main .item:hover .cover {
+        opacity: 0.7;
+      }
+
+      .titulo2 h1 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 4em;
+        color: #79d901;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .presentacion .header {
+        max-height: 900px;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+      }
+      .presentacion .header .titulo2 {
+        position: relative;
+        top: -400px;
+        transition: top 0.5s ease-in-out;
+        z-index: 1;
+      }
+      .presentacion .header h1 {
+        color: #79d901;
+        max-width: 620px;
+        margin: auto;
+        font-size: 5em;
+        text-shadow: 3px 3px 3px #333;
+      }
+      .presentacion .header .titulo2 svg {
+        margin: auto;
+        max-height: 100px;
+        max-width: 100px;
+        min-width: 100px;
+        display: block;
+        text-shadow: 3px 3px 3px #333;
+        -webkit-filter: drop-shadow( 3px 3px 3px #333 );
+                filter: drop-shadow( 3px 3px 3px #333 );
+      }
+      .presentacion .header .titulo2 svg path {
+        fill: #79d901;
+        stroke: #fff;
+      }
+      .presentacion .header .fondo {
+        position: relative;
+        top: 0px;
+      }
+      .loto {
+        display: none;
+      }
+
+      @media screen and (max-width: 767px) {
+        .titulo2 h1 {
+          font-size: 2.6em;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+        .presentacion.visible-xs-block .titulo2 {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        .presentacion.visible-xs-block .titulo2 h1 {
+          font-size: 3em;
+          background-image: url("imagenes/mobile22.png");
+          color: #346473;
+          background-size: 375px 150px;
+          background-repeat: no-repeat;
+          background-position: 50%;
+          margin-top: 0;
+          margin-bottom: 0;
+          padding-top: 10px;
+        }
+        .listado-main .item {
+          max-height: 195px;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .listado-main {
+          opacity: 1;
+        }
+      }
+      @media screen and (min-width: 376px) and (max-width: 640px) {
+        .presentacion.visible-xs-block .titulo2 h1 {
+          background-image: url("imagenes/mobile32.png");
+          background-size: 640px 100px;
+        }
+      }
+      @media screen and (min-width: 641px) and (max-width: 767px) {
+        .presentacion.visible-xs-block .titulo2 h1 {
+          background-size: cover;
+        }
+      }
+      @media screen and (min-width: 1600px) {
+        .presentacion .header .titulo2 {
+          top: -600px;
+        }
+        .presentacion .header h1 {
+          max-width: 1000px;
+          font-size: 7em;
+        }
+      }
+    </style>
+  {{/inline}}
+  {{#*inline "content"}}
+    <div class="row presentacion hidden-xs">
+      <div class="col-md-12 header">
+        <img src="imagenes/presentacion63.jpg" class="img-responsive fondo" />
+        <div class="titulo2">
+          <h1>20 años dedicados a tu Belleza y Bienestar!!!</h1>
+          <svg xmlns="http://www.w3.org/2000/svg" class="loto" viewBox="0 0 64 64">
+            <g>
+             <path stroke-width="1" d="m28.577641,50.704811c-11.33835,-6.722153 -17.34854,-18.04932 -17.60153,-26.678112c5.233839,0.115042 17.809439,13.34433 18.37496,26.388832"/>
+             <path stroke-width="2" d="m31.956141,51.152241c-5.777021,-0.634941 -6.49296,-27.246721 0.072409,-33.793661c7.131672,6.130121 7.160652,33.364561 -0.072409,33.793661z"/>
+             <path stroke-width="1" d="m26.53105,49.224449c-6.35289,-7.876808 -7.536579,-16.579861 -5.55904,-26.486799c3.86429,2.36672 11.44594,11.90724 10.92952,28.415468"/>
+             <path stroke-width="2" d="m31.886101,51.055031c-7.705021,-10.829342 -17.29388,-19.24901 -27.510471,-19.617981c6.40385,12.026699 6.8417,18.414379 27.5969,19.65736"/>
+             <path stroke-width="1" d="m35.278011,50.687069c11.338348,-6.722149 17.348537,-18.04932 17.601528,-26.678108c-5.233841,0.11504 -17.809441,13.34433 -18.374958,26.388828"/>
+             <path stroke-width="1" d="m37.3246,49.206711c6.352879,-7.876801 7.536572,-16.579849 5.55904,-26.486801c-3.8643,2.36672 -11.44594,11.907242 -10.92952,28.41547"/>
+             <path stroke-width="2" d="m31.969549,51.037289c7.705011,-10.829338 17.293882,-19.249008 27.510469,-19.617979c-6.403839,12.026701 -6.841698,18.414381 -27.596899,19.657362"/>
+           </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="row presentacion visible-xs-block">
+      <div class="col-md-12 titulo2">
+        <h1>20 años dedicados a tu Belleza y Bienestar!!!</h1>
+      </div>
+    </div>
+    <div class="container titulo2">
+      <h1>Te invitamos a conocer nuestro cálido Espacio</h1>
+    </div>
+    <div class="container listado-main">
+      <div class="row">
+        <div class="col-md-4 item">
+          {{>gallery-item
+            thumbnail="imagenes/Profesionales/recorte2.jpeg"
+            original="imagenes/Profesionales/local1.jpeg"
+            size="1400x933"
+          }}
+        </div>
+        <div class="col-md-4 item">
+          {{>gallery-item
+            thumbnail="imagenes/Profesionales/recorte6.jpeg"
+            original="imagenes/Profesionales/local2.jpeg"
+            size="933x1400"
+          }}
+        </div>
+        <div class="col-md-4 item">
+          {{>gallery-item
+            thumbnail="imagenes/Profesionales/recorte4.jpeg"
+            original="imagenes/Profesionales/local3.jpeg"
+            size="933x1400"
+          }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 item">
+          {{>gallery-item
+            thumbnail="imagenes/Profesionales/recorte5.jpeg"
+            original="imagenes/Profesionales/local4.jpeg"
+            size="1400x1005"
+          }}
+        </div>
+        <div class="col-md-4 item">
+          {{>gallery-item
+            thumbnail="imagenes/Profesionales/recorte3.jpeg"
+            original="imagenes/Profesionales/local5.jpeg"
+            size="1400x934"
+          }}
+        </div>
+        <div class="col-md-4 item">
+          {{>gallery-item
+            thumbnail="imagenes/Profesionales/recorte7.jpeg"
+            original="imagenes/Profesionales/local6.jpeg"
+            size="1400x934"
+          }}
+        </div>
+      </div>
+    </div>
+    {{>photoswipe}}
+  {{/inline}}
+  {{#*inline "scripts"}}
+    <!-- Photoswipe JS Files -->
+    <script defer="defer" src="js/ps/photoswipe.min.js"></script>
+    <script defer="defer" src="js/ps/photoswipe-ui-default.min.js"></script>
+    <script defer="defer" src="js/ps/initps.js"></script>
+    <script type="text/javascript">
+      function setHeaderHeight(){
+        var height = Math.ceil(window.innerWidth * 596/1400);
+        document.querySelector('.presentacion .header').style.maxHeight = height + 'px';
+        document.querySelector('.presentacion .header .titulo2').style.top = (-1 * (height - 40)) + 'px';
+      }
+      function resizeListener(){
+        var resizeTimeout = null;
+        window.addEventListener("resize", function(){
+          if (resizeTimeout) {
+            window.clearInterval(resizeTimeout);
+          }
+          resizeTimeout = window.setTimeout(function(){
+            setHeaderHeight();
+            resizeTimeout = null;
+          }, 200);
+        }, false);
+      }
+      setHeaderHeight();
+      document.addEventListener("DOMContentLoaded", function(){
+        initPS('.listado-main');
+        resizeListener();
+      }, false);
+      window.addEventListener("load", function(){
+        document.querySelector('.listado-main').style.opacity = 1;
+      }, false);
+    </script>
+  {{/inline}}
+{{/layout}}

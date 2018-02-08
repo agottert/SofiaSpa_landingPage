@@ -1,0 +1,75 @@
+{{#> layout title="Sofia Spa" seccion="Productos"}}
+
+  {{#*inline "css"}}
+    <style type="text/css">
+      .productos {
+        font-size: 1.5em;
+        line-height: 1.6em;
+        font-family: "Josefin Sans", sans-serif;
+        max-width: 912px;
+      }
+      .productos h1 {
+        text-align: center;
+      }
+      .productos .producto {
+        margin: 40px 5px;
+      }
+      .producto img {
+        max-width: 100%;
+      }
+      .ancho {
+        min-width: 910px;
+      }
+      .texto {
+        text-align: center;
+      }
+      @media screen and (max-width: 767px) {
+        .ancho {
+          min-width: auto;
+          text-align: center;
+        }
+        .ancho img:first-of-type {
+          margin-bottom: 40px;
+        }
+      }
+    </style>
+  {{/inline}}
+
+  {{#*inline "content"}}
+    <div class="container productos">
+      <div class="texto center-block">
+        <p>
+          Sofia Spa te provee de los mejores productos en cosmética. Cualquier información que necesitas respecto a productos, precios, y catalogos no dudes en <a href="turnos.html">contactarnos</a> por precios y catálogos, estamos a tu disposición.
+        </p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/lidherma.jpg" class="imagen center-block">
+      </div>
+      <div class="producto">
+        <img class="imagen center-block" src="imagenes/logoidraet.jpg">
+      </div>
+      <div class="producto">
+        <img class="imagen center-block" src="imagenes/exelcrema.jpg">
+      </div>
+      <div class="producto">
+        <div class="center-block ancho">
+          <img class="imagen" src="imagenes/everglaze.jpg">
+          <img class="imagen" src="imagenes/icono.jpg">
+        </div>
+      </div>
+      <div class="producto">
+        <div class="center-block ancho">
+          <img class="imagen" src="imagenes/just.jpg">
+          <img class="imagen" src="imagenes/zine2.jpg">
+        </div>
+      </div>
+      <div class="producto">
+        <div class="center-block ancho">
+          <img class="imagen" src="imagenes/Profesionales/especificosbuenos.jpeg">
+          
+        </div>
+      </div>
+    </div>
+  {{/inline}}
+
+{{/layout}}

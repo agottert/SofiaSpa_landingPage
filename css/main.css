@@ -1,0 +1,120 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans:400|Michroma:400'; /* Google Fonts */
+@import 'https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css'; /* Socicon Font */
+
+a:active {
+  outline: none;
+}
+h2 {
+  color: #79d901;
+}
+.heading h1 {
+  text-align: center;
+  padding: 60px 15px;
+  margin: 0;
+  font-size: 3.5em;
+  background-color: #edf781;
+  color: #346473;
+  font-size: 3.5em;
+  background-image: url("../imagenes/fondos/verde-transparent.svg");
+  background-repeat: no-repeat;
+  background-size: 109%;
+  background-position: 50% 46%;
+}
+.heading {
+  margin-bottom: 20px;
+}
+
+.subheading-image img {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  min-width: 100%;
+}
+nav.navbar,
+.heading {
+  font-family: "Josefin Sans", sans-serif;
+}
+nav.navbar {
+  font-size: 1.15em;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+#main-navbar > ul > li > a {
+  text-transform: uppercase;
+}
+.dropdown-menu {
+  font-size: 1em;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-nav > li > a {
+  padding-top: 22px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 3px solid #fff;
+  color: #777;
+}
+.navbar-default .navbar-nav > li.open > a,
+.navbar-default .navbar-nav > li > a:hover {
+  /*color: #c40546;*/
+  color: #777;
+  background-color: transparent;
+  border-bottom: 3px solid #79d901;
+  transition: color 0.2s, border-bottom 0.5s;
+}
+.dropdown-menu > li > a:hover {
+  color: black;
+  text-decoration: none;
+  /*background-color: #c40546;*/
+}
+.navbar-default {
+  background-color: #fff;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: #fff;
+}
+nav .logo {
+  font-family: "Michroma", sans-serif;
+  font-size: 3em;
+  height: 64px;
+}
+
+/*.navbar-default .navbar-nav > li > a:hover,*/
+.navbar-default .navbar-header img {
+  float: left;
+  top: -7px;
+  position: relative;
+  margin-right: 7px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand {
+  color: #c40546;
+}
+
+.img-underline img {
+  border-bottom: 5px solid #79d901;
+  padding-bottom: 3px;
+}
+
+.link-promos {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-toggle {
+    margin-right: 5px;
+  }
+  nav .logo {
+    padding-right: 0;
+    padding-left: 5px;
+    font-size: 1.8em;
+  }
+  .heading h1 {
+    background-size: 200%;
+    background-position: 50% 46%;
+  }
+}

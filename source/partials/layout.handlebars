@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+{{#>head}}
+  {{>css}}
+{{/head}}
+<body>
+  {{>navbar}}
+  {{#if seccion}}
+  <div class="heading">
+    <div class="contenedor">
+      <h1>{{seccion}}</h1>
+    </div>
+  </div>
+  {{/if}}
+
+  {{>content}}
+
+  {{>footer}}
+
+  <!-- Scripts -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2QFHQLb9l-JtnLTpCTPTOrsGtmG7W_1M&callback=initMap" async defer></script>
+  <script src="./js/main.js"></script>
+  <!-- /Scripts -->
+  <!-- Section Specific Scripts -->
+  {{#if custom-scripts}}
+    {{>scripts}}
+  {{/if}}
+</body>
+
+</html>
